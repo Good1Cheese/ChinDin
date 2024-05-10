@@ -1,2 +1,0 @@
-class PhraseologismsController < ApplicationController
-end

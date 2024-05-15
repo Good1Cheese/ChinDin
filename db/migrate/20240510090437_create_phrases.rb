@@ -5,10 +5,9 @@ class CreatePhrases < ActiveRecord::Migration[7.1]
       t.text :pronunciation
       t.text :literal_trans
       t.text :figurative_trans
-      t.class :figurative_trans
-      t.references :structure_id
-      t.references :class_id
-      t.references :subclass_id
+      t.text :structure
+      t.text :class
+      t.text :subclass
 
       t.timestamps
     end

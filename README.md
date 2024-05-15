@@ -1,5 +1,24 @@
-# ChinDin
- 
-This is a easy to use somatic dictionary.
-It's dedicated to phraseological units with "internal organ" component. 
-You can find here hundreds of usable Chinese phraseological units with description, examples and russian translation.
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

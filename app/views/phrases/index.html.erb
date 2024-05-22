@@ -1,7 +1,18 @@
 <main>
-  <h1 class="title">Lorem ipsum</h1>
-  <div class="search">
-    <input class="search-bar" type="search" placeholder="Search">
+  <a class="main-link" href="/"><h1 class="main-title">Чэнъюй с компонентами «Внутренние органы человека»</h1></a>
+  <div class="main-container">
+    <!-- <input class="main-container-search" type="search" placeholder="Search"> -->
+
+    <%= form_with url: "/search", method: :get do |f| %>
+      <%= f.text_field :search, placeholder: "Search", value: @s_value,  class: "main-container-search" %>
+    <% end %>
+
+    <% @phrases.each do |phrase| %>
+      <div class="main-container-element">
+        <p class="main-container-element-text"><%= phrase.id %>. <%= phrase.text %></p>
+        <p class="main-container-element-text"><%= phrase.figurative_trans %></p>
+        <p class="main-container-element-text"><%= phrase.literal_trans %></p>
+      </div>
+    <% end %>
   </div>
 </main>
-
